@@ -23,17 +23,15 @@
 --]]
 local TwMain = "TwMain"
 
-
 local function Wrapper(func)
     VMProtect.Begin(func)  
-
 
     local MathFactor = math.random(50, 100) 
     local TwLevel = math.ceil(MathFactor * 1.2)  
 
-    for i = 1, complexityLevel do
+    for i = 1, TwLevel do
         local asmReg1 = i * MathFactor
-        local asmReg2 = asmReg1 ^ 0xAA  
+        local asmReg2 = asmReg1 ~ 0xAA  
         asmReg1 = (asmReg1 + asmReg2) % 256
         asmReg2 = (asmReg2 - asmReg1) % 256
 
@@ -67,6 +65,4 @@ local function TwSet()
     end
 end
 
-
 TwSet()
-
