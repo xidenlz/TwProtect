@@ -1,5 +1,4 @@
 # TwProtect
-So since application security is important thing, i decided to release this VMProtection script, Yeah I'm using VMP scripting for more security, by XORING the functions, It's something similler to LLVM, just paste it on VMP script section and compile it, ofc it's old, I won't release something like this unless if i have better one
-
+Application security matters, so I'm releasing this VMProtect script. It uses VMProtect scripting to increase security by XOR-ing functions, which is somewhat similar to LLVM. Just paste it into the VMProtect script section, and compile. It’s an older script, and I'm only releasing it since I’ve got something better now.
 
 Byeee.
